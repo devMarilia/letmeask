@@ -15,6 +15,10 @@
   <img alt="JavaScript" title="#JavaScript" src="https://raw.githubusercontent.com/guilhermecapitao/letmeask/master/.github/cover.svg" />
 </h1>
 
+
+### Dependências 
+
+``` Yarn add firebase ```
 ### Ícones para commits padrão
 
 - :package: nova funcionalidade
