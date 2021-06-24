@@ -18,7 +18,11 @@
 
 ### Dependências 
 
-``` Yarn add firebase ```
+``` yarn add firebase ```
+
+``` yarn add node-sass@^5.0.0```
+``` yarn add react-router-dom```
+``` yarn add @types/react-router-dom```
 ### Ícones para commits padrão
 
 - :package: nova funcionalidade
