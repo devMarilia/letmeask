@@ -30,7 +30,7 @@ export function NewRoom(){
       title: newRoom,
       authorId: user?.id,
     })
-    history.push(`/rooms/&{firebaseRoom.key}`)
+    history.push(`/rooms/${firebaseRoom.key}`)
   }
     return(
         <div id="page-auth">
