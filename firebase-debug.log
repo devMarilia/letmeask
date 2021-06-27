@@ -1,0 +1,192 @@
+[debug] [2021-06-27T22:37:08.060Z] ----------------------------------------------------------------------
+[debug] [2021-06-27T22:37:08.062Z] Command:       /home/marilia/.nvm/versions/node/v12.21.0/bin/node /home/marilia/.nvm/versions/node/v12.21.0/bin/firebase init
+[debug] [2021-06-27T22:37:08.062Z] CLI Version:   9.14.0
+[debug] [2021-06-27T22:37:08.062Z] Platform:      linux
+[debug] [2021-06-27T22:37:08.062Z] Node Version:  v12.21.0
+[debug] [2021-06-27T22:37:08.063Z] Time:          Sun Jun 27 2021 19:37:08 GMT-0300 (GMT-03:00)
+[debug] [2021-06-27T22:37:08.063Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-27T22:37:08.067Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-27T22:37:08.067Z] > authorizing via signed-in user (devmarilia.frontend@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/marilia/src/nlw/letmeask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-06-27T22:38:29.545Z] > refreshing access token with scopes: []
+[debug] [2021-06-27T22:38:29.547Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-27T22:38:29.772Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 27 Jun 2021 22:38:29 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-27T22:38:29.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-06-27T22:38:30.832Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2021-06-27T22:38:30.832Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-06-27T22:38:30.834Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-06-27T22:38:31.029Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-06-27T22:38:36.841Z] ----------------------------------------------------------------------
+[debug] [2021-06-27T22:38:36.843Z] Command:       /home/marilia/.nvm/versions/node/v12.21.0/bin/node /home/marilia/.nvm/versions/node/v12.21.0/bin/firebase init
+[debug] [2021-06-27T22:38:36.843Z] CLI Version:   9.14.0
+[debug] [2021-06-27T22:38:36.843Z] Platform:      linux
+[debug] [2021-06-27T22:38:36.843Z] Node Version:  v12.21.0
+[debug] [2021-06-27T22:38:36.843Z] Time:          Sun Jun 27 2021 19:38:36 GMT-0300 (GMT-03:00)
+[debug] [2021-06-27T22:38:36.844Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-27T22:38:36.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-27T22:38:36.848Z] > authorizing via signed-in user (devmarilia.frontend@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/marilia/src/nlw/letmeask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-06-27T22:38:56.123Z] > refreshing access token with scopes: []
+[debug] [2021-06-27T22:38:56.125Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-27T22:38:56.341Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 27 Jun 2021 22:38:56 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-27T22:38:56.348Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-06-27T22:38:57.381Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2021-06-27T22:38:57.381Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-06-27T22:38:57.382Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-06-27T22:38:57.566Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-06-27T22:39:28.541Z] ----------------------------------------------------------------------
+[debug] [2021-06-27T22:39:28.542Z] Command:       /home/marilia/.nvm/versions/node/v12.21.0/bin/node /home/marilia/.nvm/versions/node/v12.21.0/bin/firebase init
+[debug] [2021-06-27T22:39:28.543Z] CLI Version:   9.14.0
+[debug] [2021-06-27T22:39:28.543Z] Platform:      linux
+[debug] [2021-06-27T22:39:28.543Z] Node Version:  v12.21.0
+[debug] [2021-06-27T22:39:28.543Z] Time:          Sun Jun 27 2021 19:39:28 GMT-0300 (GMT-03:00)
+[debug] [2021-06-27T22:39:28.544Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-27T22:39:28.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-27T22:39:28.548Z] > authorizing via signed-in user (devmarilia.frontend@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/marilia/src/nlw/letmeask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-06-27T22:40:37.136Z] > refreshing access token with scopes: []
+[debug] [2021-06-27T22:40:37.138Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-27T22:40:37.379Z] <<< HTTP RESPONSE 400 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 27 Jun 2021 22:40:37 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-27T22:40:37.387Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-06-27T22:40:37.765Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2021-06-27T22:40:37.766Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-06-27T22:40:37.767Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-06-27T22:40:37.959Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2021-06-27T22:46:06.089Z] ----------------------------------------------------------------------
+[debug] [2021-06-27T22:46:06.091Z] Command:       /home/marilia/.nvm/versions/node/v12.21.0/bin/node /home/marilia/.nvm/versions/node/v12.21.0/bin/firebase init
+[debug] [2021-06-27T22:46:06.091Z] CLI Version:   9.14.0
+[debug] [2021-06-27T22:46:06.092Z] Platform:      linux
+[debug] [2021-06-27T22:46:06.092Z] Node Version:  v12.21.0
+[debug] [2021-06-27T22:46:06.092Z] Time:          Sun Jun 27 2021 19:46:06 GMT-0300 (GMT-03:00)
+[debug] [2021-06-27T22:46:06.092Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-27T22:46:06.096Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-27T22:46:06.096Z] > authorizing via signed-in user (devmarilia.frontend@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/marilia/src/nlw/letmeask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-06-27T22:46:29.857Z] > refreshing access token with scopes: []
+[debug] [2021-06-27T22:46:29.860Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-27T22:46:30.112Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 27 Jun 2021 22:46:30 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-27T22:46:30.121Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-06-27T22:46:31.146Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2021-06-27T22:46:31.146Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2021-06-27T22:46:31.147Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2021-06-27T22:46:31.338Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/features/project.js:87:27)
+    at async init (/home/marilia/.nvm/versions/node/v12.21.0/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.

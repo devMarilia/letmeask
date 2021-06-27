@@ -23,6 +23,7 @@
 ``` yarn add node-sass@^5.0.0```
 ``` yarn add react-router-dom```
 ``` yarn add @types/react-router-dom```
+``` yarn add classnames```
 ### Ícones para commits padrão
 
 - :package: nova funcionalidade
